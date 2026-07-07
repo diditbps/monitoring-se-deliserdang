@@ -1,0 +1,49 @@
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.typeSelector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: var(--gray-800);
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-700);
+}
+
+.typeSelectorTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-100);
+  margin: 0;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 24px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-300);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.radioLabel:hover {
+  color: var(--gray-100);
+}
+
+.radioLabel input[type="radio"] {
+  accent-color: var(--primary-500);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}

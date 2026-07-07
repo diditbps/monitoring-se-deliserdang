@@ -1,0 +1,56 @@
+.container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.datePickerGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.datePickerGroup label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.dateInput {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  color-scheme: dark;
+}
+
+.dateInput:focus {
+  border-color: var(--primary-color);
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary);
+  font-style: italic;
+}

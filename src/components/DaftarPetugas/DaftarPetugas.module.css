@@ -1,0 +1,223 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--gray-800);
+  padding: 16px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-700);
+}
+
+.topBar h2 {
+  margin: 0;
+  color: var(--gray-100);
+  font-size: 1.25rem;
+}
+
+.filterSelect {
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-600);
+  background: var(--gray-900);
+  color: var(--gray-100);
+  min-width: 200px;
+}
+
+.tableWrapper {
+  background: var(--gray-800);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-700);
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--gray-100);
+}
+
+.table th, .table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-700);
+}
+
+.table th {
+  background: var(--gray-900);
+  color: var(--gray-300);
+  font-weight: 600;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.emptyState {
+  padding: 20px;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.exportBtn {
+  background: var(--primary-600);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.exportBtn:hover {
+  background: var(--primary-500);
+}
+
+.uploadSuratWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.uploadSuratLabel {
+  background: var(--primary-600);
+  color: white;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.uploadSuratLabel:hover {
+  background: var(--primary-500);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--gray-800);
+  border-top: 1px solid var(--gray-700);
+  margin-top: -1px;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 8px;
+}
+
+.pageBtn, .numBtn {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-700);
+  color: var(--gray-300);
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled), .numBtn:hover:not(:disabled):not(.dots) {
+  background: var(--gray-700);
+  color: white;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.numBtn.activePage {
+  background: var(--primary-600);
+  border-color: var(--primary-500);
+  color: white;
+  font-weight: 600;
+}
+
+.numBtn.dots {
+  background: transparent;
+  border-color: transparent;
+  cursor: default;
+}
+
+/* Login Form */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.loginForm {
+  background: var(--gray-800);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-700);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.loginForm h3 {
+  margin: 0;
+  color: var(--gray-100);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-600);
+  background: var(--gray-900);
+  color: var(--gray-100);
+  font-size: 1rem;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-600);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.loginBtn:hover {
+  background: var(--primary-500);
+}
+
+.error {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
